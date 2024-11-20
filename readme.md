@@ -23,8 +23,8 @@ O projeto deve ser feito utilizando as boas práticas de prompt engineer.
 - [💪 Biotipos Corporais](#-biotipos-corporais)
 - [📅 Dias Disponíveis para Treino](#-dias-disponíveis-para-treino)
 - [🏅 Níveis de Treinamento](#-níveis-de-treinamento)
-- [🏋️ Tipos de Exercícios](#-tipos-de-exercícios)
-- [🛠️ Regras de Negócio](#-regras-de-negócio)
+- [🏋️ Tipos de Exercícios](#️-tipos-de-exercícios)
+- [🛠️ Regras de Negócio](#️-regras-de-negócio)
 - [📖 Material de Apoio](#-material-de-apoio)
 - [🎯 Prompt de Resposta Proposto](#-prompt-de-resposta-proposto)
 
