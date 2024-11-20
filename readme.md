@@ -12,7 +12,7 @@
 
 <p align="center">
   <h3 align="center">🏋️‍♂️ Assistente de Personal Trainer - Gerador de Treino Ideal</h3>
-Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal para cada combinação de fatores, como biotipo corporal, disponibilidade de tempo e tipo de exercícios preferidos. O assistente de personal trainer gerado por esse prompt será capaz de personalizar os treinos de acordo com as características e necessidades do usuário.
+Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal para cada combinação de fatores, como biotipo corporal, disponibilidade de tempo, níveis de treinamento e tipo de exercícios preferidos. O assistente de personal trainer gerado por esse prompt será capaz de personalizar os treinos de acordo com as características e necessidades do usuário.
 O projeto deve ser feito utilizando as boas práticas de prompt engineer.
 </p>
 
@@ -22,8 +22,9 @@ O projeto deve ser feito utilizando as boas práticas de prompt engineer.
 - [📝 Introdução](#-introdução)
 - [💪 Biotipos Corporais](#-biotipos-corporais)
 - [📅 Dias Disponíveis para Treino](#-dias-disponíveis-para-treino)
-- [🏋️ Tipos de Exercícios](#️-tipos-de-exercícios)
-- [🛠️ Regras de negócio](#️-regras-de-negócio)
+- [🏅 Níveis de Treinamento](#-níveis-de-treinamento)
+- [🏋️ Tipos de Exercícios](#-tipos-de-exercícios)
+- [🛠️ Regras de Negócio](#-regras-de-negócio)
 - [📖 Material de Apoio](#-material-de-apoio)
 - [🎯 Prompt de Resposta Proposto](#-prompt-de-resposta-proposto)
 
@@ -31,7 +32,7 @@ O projeto deve ser feito utilizando as boas práticas de prompt engineer.
 
 ## 📝 Introdução
 
-Este projeto visa criar um assistente de personal trainer automatizado que ajuda a gerar treinos personalizados. O usuário fornecerá informações como o biotipo corporal, a quantidade de dias disponíveis para treinar na semana e o tipo de exercício preferido, e o assistente gerará um plano de treino ideal com base nessas informações.
+Este projeto visa criar um assistente de personal trainer automatizado que ajuda a gerar treinos personalizados. O usuário fornecerá informações como o biotipo corporal, a quantidade de dias disponíveis para treinar na semana, o nível de treinamento atual e o tipo de exercício preferido, e o assistente gerará um plano de treino ideal com base nessas informações.
 
 ---
 
@@ -80,17 +81,31 @@ A segunda regra é determinar quantos dias por semana o usuário tem disponível
 | -------------------------------------------------------------- | ------------------- | --------------------------- |
 | <img src=".github/assets/calendar.png" width="50" height="50"> | 1 dia               | Treino Full Body            |
 | <img src=".github/assets/calendar.png" width="50" height="50"> | 3 dias              | Treino ABC                  |
+| <img src=".github/assets/calendar.png" width="50" height="50"> | 4 dias              | Treino ABCD                 |
 | <img src=".github/assets/calendar.png" width="50" height="50"> | 5 dias              | Treino ABCDE                |
 
 - **Full Body**: Treino que trabalha o corpo todo em uma única sessão.
 - **ABC**: Divisão do treino em três dias, cada um focado em grupos musculares diferentes.
+- **ABCD**: Divisão do treino em quatro dias, cada um focado em grupos musculares diferentes com maior volume de treino.
 - **ABCDE**: Divisão do treino em cinco dias, com foco ainda mais específico em cada grupo muscular.
+
+---
+
+## 🏅 Níveis de Treinamento
+
+A terceira regra consiste em identificar o nível de treinamento do usuário. Os níveis são classificados com base no tempo de experiência e na familiaridade com os exercícios:
+
+| **Emoji** | **Nível**         | **Descrição**                                                                                                      |
+|-----------|-------------------|--------------------------------------------------------------------------------------------------------------------|
+|  🐤       | **Iniciante**     | Com até 6 meses de treino. Está aprendendo técnicas básicas e criando consistência.                                |
+|  🐔       | **Intermediário** | Com 6 meses a 2 anos de experiência, já possui familiaridade com exercícios e começa a focar em progressão.        |
+|  🔥       | **Avançado**      | Mais de 2 anos de treino consistente, busca otimização em detalhes e atinge altos níveis de força ou hipertrofia.  |
 
 ---
 
 ## 🏋️ Tipos de Exercícios
 
-A terceira regra envolve a escolha do tipo de exercício preferido. Aqui estão algumas categorias com exemplos:
+A quarta regra envolve a escolha do tipo de exercício preferido. Aqui estão algumas categorias com exemplos:
 
 | **Imagem**                                                       | **Tipo de Treino** | **Descrição**                                                                                                 |
 | ---------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------- |
@@ -102,12 +117,13 @@ A terceira regra envolve a escolha do tipo de exercício preferido. Aqui estão 
 
 ---
 
-## 🛠️ Regras de negócio
+## 🛠️ Regras de Negócio
 
 1. **Identifique seu biotipo corporal** consultando a seção de biotipos.
 2. **Determine quantos dias por semana você pode treinar** e escolha o tipo de treino mais adequado.
-3. **Selecione o tipo de exercício** que prefere realizar e que se encaixa melhor nos seus objetivos.
-4. Use o prompt do assistente para gerar um plano de treino personalizado.
+3. **Determine seu nível de treinamento** avaliando sua experiência e frequência de prática atual.
+4. **Selecione o tipo de exercício** que prefere realizar e que se encaixa melhor nos seus objetivos.
+5. Use o prompt do assistente para gerar um plano de treino personalizado.
 
 ---
 
